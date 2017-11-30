@@ -1,0 +1,148 @@
+/* general settings */
+
+html {
+    font-size: 18px; /* base font size is 10 px high */
+    font-family: 'Ropa Sans', sans-serif;
+    background-color: white;
+}
+
+p {
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0;
+}
+
+.description {
+    color: dimgray;
+    font-size: 17px;
+    margin-bottom: -5px;
+}
+
+figure {
+    width: 31%;
+    display: inline-block;
+    margin: 1%;
+    align-content: center;
+}
+
+figcaption {
+    text-align: center;
+    color: gray;
+    font-weight: lighter;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: dimgray;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkgray;
+}
+
+li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+
+/* sections */
+
+body {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    /*padding: 0 20px 20px 20px;*/
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+div {
+    margin-bottom: 30px;
+}
+
+footer {
+    clear:both;
+}
+
+
+
+/* headers */
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+}
+
+h2 {
+    font-size: 60px;
+    text-align: center;
+    color: dimgray;
+    margin: 10px 0;
+}
+
+h3 {
+    font-size: 50px;
+    color: black;
+    
+}
+
+
+/* homepage specific */
+
+#banner {
+    padding: 50px 0 20px 0;
+}
+
+.description {
+    color: dimgray;
+    font-size: 17px;
+    margin-bottom: -5px;
+}
+
+.subtext {
+    font-size: 15px;
+    color: gray;
+    margin: -15px;
+}
+
+/* experience page specific */
+
+.crop {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.crop img {
+    width: 270px;
+    height: 400px;
+    margin: -50px 0 0 0;
+    float: left;
+}
+
+.resume {
+    width: 1200px;
+    overflow: hidden;
+}
+
+.education {
+    position: relative;
+    display: inline-block;
+}
