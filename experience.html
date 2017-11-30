@@ -6,6 +6,7 @@
         <meta name="description" content="Online resume, portfolio, and project tracker for Rachel Kitchen.">
         <link rel="stylesheet" href="styles/style.css">
         <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+        <script type="text/javascript" src="scripts/experience.js"></script>
                 
         <title>Experience</title>
     </head>
@@ -18,37 +19,119 @@
             <hr>
         </header>
         
-        <main data-role="main" class="ui-content">
+        <main>
             <h2>EXPERIENCE</h2>
-            <div class="resume">
+            
                 <div class="crop">
                     <img src="images/RachelKitchen.jpg" id="profile-pic" width="326.5" height="489.8">
                 </div>
                 <h3 id="name">Rachel Kitchen</h3>
                 
-                <div class="education">
-                    
-                    <div data-role="collapsible" id="education-dropdown">
-                        <h4>Education</h4>
-                        <ul data-role="listview">
-                            <li>Virginia Polytechnic Institute and University</li>
-                            <li>Poolesville High School</li>
+            <button class="accordian" onclick="toggleActive(this);">Education</button>
+            <div class="panel">
+                    <button class="sub-accordian" onclick="toggleActive(this);">Virginia Polytechnic Institute and State University</button>
+                    <div class="sub-panel">
+                        <ul>
+                            <li>B.S. Computer Science</li>
+                            <li>Minors: Spanish, Math</li>
+                            <li>Graduation Date: May 2020</li>
                         </ul>
                     </div>
-                </div>
-                
-                <div data-role="collapsible" class="related-experience">
-                    <h4>Related Experience</h4>
-                    <ul data-role="listview">
-                        <li>Neural Network Visualization</li>
-                        <li>Cyber Security Engineer Intern</li>
-                    </ul>
-                </div>
-                
-                <div class="skills"></div>
-                
+                    <button class="sub-accordian" onclick="toggleActive(this);">Poolesville High School</button>
+                    <div class="sub-panel">
+                        <ul>
+                            <li>Graduation Date: June 2016</li>
+                        </ul>
+                    </div>
             </div>
-            <a href="../../../school/fall-2017/kitchen-resume-v2.pdf"><img src="images/download.png" width="200" height="60"></a>
+            
+            <button class="accordian" onclick="toggleActive(this);">Relevant Experience</button>
+            <div class="panel">
+                <ul>
+                    <button class="sub-accordian" onclick="toggleActive(this);">Undergraduate Research</button>
+                    <div class="sub-panel">
+                        <ul>
+                            <li>Neural Network Visualization</li>
+                        </ul>
+                    </div>
+                    <button class="sub-accordian" onclick="toggleActive(this);">Cyber Security Engineer Intern</button>
+                    <div class="sub-panel">
+                    <ul>
+                        <li>Raytheon</li>
+                        <li>Summer 2017</li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+            
+            <button class="accordian" onclick="toggleActive(this);">Projects</button>
+            <div class="panel">
+                <ul>
+                    <button class="sub-accordian" onclick="toggleActive(this);">VR Runner</button>
+                    <div class="sub-panel">
+                        <ul>
+                            <li>Google Cardboard VR game</li>
+                            <li>Unity Game Engine</li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+            
+            <button class="accordian" onclick="toggleActive(this);">Extracurricular Activities</button>
+            <div class="panel">
+                <ul>
+                    <button class="sub-accordian" onclick="toggleActive(this);">Hackers@VT</button>
+                    <div class="sub-panel">
+                        <ul>
+                            <li>Design Committee</li>
+                        </ul>
+                    </div>
+                    <button class="sub-accordian" onclick="toggleActive(this);">Association for Women in Computing</button>
+                    <div class="sub-panel">
+                    <ul>
+                        <li>SEC Representative</li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+            
+            <button class="accordian" onclick="toggleActive(this);">Awards &amp; Achievements</button>
+            <div class="panel">
+                <ul>
+                    <button class="sub-accordian" onclick="toggleActive(this);">Investment in Excellence and CSRC Scholarships</button>
+                    <div class="sub-panel">
+                        <ul>
+                            <li>2017</li>
+                        </ul>
+                    </div>
+                    <button class="sub-accordian" onclick="toggleActive(this);">1st Place in Arduino Hackathon</button>
+                    <div class="sub-panel">
+                    <ul>
+                        <li>Demo</li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+            
+            <button class="accordian" onclick="toggleActive(this);">Other Experience</button>
+            <div class="panel">
+                <ul>
+                    <button class="sub-accordian" onclick="toggleActive(this);">Freelance Videographer</button>
+                    <div class="sub-panel">
+                        <ul>
+                            <li>link to art</li>
+                        </ul>
+                    </div>
+                    <button class="sub-accordian" onclick="toggleActive(this);">Girl Scouts</button>
+                    <div class="sub-panel">
+                    <ul>
+                        <li>picture</li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+                
+            <center><a href="files/KitchenRachel-Resume.pdf"><img src="images/download.png" width="200" height="60"></a></center>
         </main>
         
         
