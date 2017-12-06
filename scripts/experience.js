@@ -3,11 +3,10 @@ function toggleActive(e) {
     /* Toggles between "active" class */
     e.classList.toggle("active");
     
-    /* Toggles showing the panel */
-    var panel = e.nextElementSibling;
-    if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
+    var x = document.getElementById(e);
+    if (x.className.indexOf("hide") == -1) {
+        x.className += "hide";
     } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
+        x.className = x.className.replace("hide", "");
     }
 }
