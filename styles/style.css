@@ -2,12 +2,13 @@
 
 html {
     font-size: 18px; /* base font size is 10 px high */
-    font-family: 'Ropa Sans', sans-serif;
+    font-family: 'Play', sans-serif;
     background-color: white;
 }
 
 p {
     font-size: 20px;
+    font-family: 'Cabin', sans-serif;
     line-height: 2;
     letter-spacing: 1px;
     padding: 0;
@@ -84,10 +85,13 @@ footer {
 /* headers */
 
 h1 {
-    font-size: 70px;
+    font-size: 60px;
+    color: #aeff72; 
+    background: url(../images/half-color.png) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
-    margin: 0;
-    padding: 20px 0;
+    margin: 10px 0px -5px 0px;
 }
 
 h2 {
@@ -124,20 +128,47 @@ h3 {
 
 /* experience page specific */
 
-.crop {
-    width: 300px;
-    height: 300px;
+.circular-portrait {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
     overflow: hidden;
-    display: block;
-    margin: 0 auto;
+    border-radius: 50%;
+}
+.circular-portrait img {
+    width: 100%;
+    height: auto;
+    margin-top: -80px;
+}
+#left-bar {
+    margin: 200px 0px 0px 60px;
+    float: left;
+}
+#right-bar {
+    float: right;
+    margin: 200px 60px 0px 0px;
 }
 
-.crop img {
-    width: 270px;
-    height: 400px;
-    margin: -50px 0 0 0;
-    display: block;
-    text-align: center;
+#name {
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 10px 0px 30px 0px;
+}
+
+.personal-statement {
+    width: 65%;
+    height: auto;
+    display: inline-block;
+    background: white;
+    border-style: groove;
+    border-color: #224b4b;
+    box-shadow: -5px 3px #6aedef;
+    border-width: 3px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+.personal-statement p {
+    font-size: 17px;
 }
 
 /* drop-down menus */
@@ -165,14 +196,23 @@ label {
     position: relative;
     display: block;
     background: #16a085;
+    margin: 0px -18px;
     font-weight: bold;
     font-size: 40px;
     font-variant-caps: all-small-caps;
     line-height: 1.5;
     cursor: pointer;
 }
+.main label {
+    background-image: url(../images/dropdown-bar-main.png);
+    color: #224b4b;
+    text-shadow: -2px 1px white;
+}
 .sub label {
-    background: gray;
+    color: white;
+    text-shadow: none;
+    
+    background: #224b4b;
     font-size: 30px;
 }
 .tab-content {
