@@ -4,53 +4,194 @@
         <meta charset="utf-8">
         <meta name="author" content="Rachel Kitchen">
         <meta name="description" content="Online resume, portfolio, and project tracker for Rachel Kitchen.">
-        <!-- <link rel="shortcut icon" href="" type="image/x-icon"> -->
         <link rel="stylesheet" href="styles/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
                 
-        <title>title</title>
-        
+        <title>Experience</title>
     </head>
     
     <body>
+    
         <header>
             <a href="index.html"><img src="images/banner.png" width="997" height="69" id="banner"></a>
-            <h1>title</h1>
+            <h1>the kitchen code</h1>
             <hr>
         </header>
         
         <main>
-            <div>
-                <figure>
-                    <a href="experience.html" title="Overview of my experience: an interactive resume">
-                    <img src="images/frame.png" width="300" height="300"></a>
-                    <figcaption>EXPERIENCE</figcaption></figure>
-                <figure>
-                    <a href="projects.html" title="My programming projects, completed and in-progress">
-                    <img src="images/bracket.png" width="300" height="300"></a>
-                    <figcaption>PROJECTS</figcaption></figure>
-                <figure>
-                    <a href="portfolio.html" title="Art and video portfolio">
-                    <img src="images/playbutton.png" width="300" height="300"></a>
-                    <figcaption>PORTFOLIO</figcaption></figure>
+            
+            <img id="left-bar" src="images/accent-bar.png">
+                <div class="circular-portrait">
+                    <img src="images/RachelKitchen.jpg" width="400" height="600">
+                </div>
+            <img id="right-bar" src="images/accent-bar.png">
+                <h3 id="name">Rachel Kitchen</h3>
+            
+            <div class="personal-statement">
+                <p>Personal statement describing your leadership service within the Division of Student Affairs. Please include how this scholarship would make a difference in your pursuit of leadership opportunities and how you feel this will impact you after graduating from Virginia Tech. Your statement should be approximately 750 words.</p>
             </div>
-            <p class="description">This website showcases my experience, programming projects, and art portfolio.</p>
-            <p class="description">Click one of the images above to learn more.</p>
+            
+                <div class="dropdown">
+                    <div class="tab main">
+                        <input id="tab-edu" type="radio" name="rtabs">
+                        <label for="tab-edu">Education</label>
+                        <div class="tab-content">
+                            <div class="tab sub">
+                                <input id="tab-vt" type="radio" name="edutabs">
+                                <label for="tab-vt">Virginia Polytechnic Institute and State University</label>
+                                <div class="tab-content">
+                                    <p>B.S. Computer Science</p>
+                                    <p>Minors: Math, Spanish</p>
+                                </div>
+                            </div>
+                            <div class="tab sub">
+                                <input id="tab-phs" type="radio" name="edutabs">
+                                <label for="tab-phs">Poolesville High School</label>
+                                <div class="tab-content">
+                                    <p>sdsdf</p>
+                                </div>
+                            </div>
+                            <div class="tab sub">
+                                <input id="tab-jhu" type="radio" name="edutabs">
+                                <label for="tab-jhu">Johns Hopkins Engineering Innovation</label>
+                                <div class="tab-content">
+                                </div>
+                            </div>
+                            <div class="tab sub">
+                                <input id="tab-au" type="radio" name="edutabs">
+                                <label for="tab-au">American University: Discover the World of Communication</label>
+                                <div class="tab-content">
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    
+                    <div class="tab main">
+                        <input id="tab-exp" type="radio" name="rtabs">
+                        <label for="tab-exp">Relevant Experience</label>
+                        <div class="tab-content">
+                            <div class="tab sub">
+                                <input id="tab-ugra" type="radio" name="exptabs">
+                                <label for="tab-ugra">Undergraduate Research</label>
+                                <div class="tab-content">
+                                </div>
+                            </div>
+                            <div class="tab sub">
+                                <input id="tab-rayth" type="radio" name="exptabs">
+                                <label for="tab-rayth">Cyber Security Engineer Intern</label>
+                                <div class="tab-content">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab main">
+                        <input id="tab-projects" type="radio" name="rtabs">
+                        <label for="tab-projects">Personal Projects</label>
+                        <div class="tab-content">
+                            <div class="tab sub">
+                                <input id="tab-vr" type="radio" name="projectstabs">
+                                <label for="tab-vr">Google VR Game</label>
+                                <div class="tab-content">
+                                    <p>screenshots, demos, description</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab main">
+                        <input id="tab-extra" type="radio" name="rtabs">
+                        <label for="tab-extra">Extracurriculars</label>
+                        <div class="tab-content">
+                            <div class="tab sub">
+                                <input id="tab-hackers" type="radio" name="extabs">
+                                <label for="tab-hackers">Hackers@VT</label>
+                                <div class="tab-content">
+                                    <p>club</p>
+                                </div>
+                            </div>
+                            <div class="tab sub">
+                                <input id="tab-awc" type="radio" name="extabs">
+                                <label for="tab-awc">Association for Women in Computing (AWC)</label>
+                                <div class="tab-content">
+                                    <p>club</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab main">
+                        <input id="tab-awards" type="radio" name="rtabs">
+                        <label for="tab-awards">Awards &amp; Achievements</label>
+                        <div class="tab-content">
+                            <div class="tab sub">
+                                <input id="tab-scholarship" type="radio" name="awardtabs">
+                                <label for="tab-scholarship">Investment in Excellence and CSRC Scholarships</label>
+                                <div class="tab-content">
+                                    <p>gud job</p>
+                                </div>
+                            </div>
+                            <div class="tab sub">
+                                <input id="tab-ard" type="radio" name="awardtabs">
+                                <label for="tab-ard">1st place in VT AWC Arduino Hackathon</label>
+                                <div class="tab-content">
+                                    <ul>
+                                        <li><img src="images/arduino_hackathon.jpeg" width="192" height="256"></li>
+                                        <li><video width="480" height="270" controls><source src="videos/arduino-demo.mp4" type="video\mp4"></video></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab main">
+                        <input id="tab-other" type="radio" name="rtabs">
+                        <label for="tab-other">Other Experience</label>
+                        <div class="tab-content">
+                            <div class="tab sub">
+                                <input id="tab-videos" type="radio" name="otabs">
+                                <label for="tab-videos">Freelance Videographer</label>
+                                <div class="tab-content">
+                                    <p>link 2 videos</p>
+                                </div>
+                            </div>
+                            <div class="tab sub">
+                                <input id="tab-gs" type="radio" name="otabs">
+                                <label for="tab-gs">Girl Scouts</label>
+                                <div class="tab-content">
+                                    <p>pics maybe?</p>
+                                </div>
+                            </div>
+                            <div class="tab sub">
+                                <input id="tab-asp" type="radio" name="otabs">
+                                <label for="tab-asp">Appalachian Service Project</label>
+                                <div class="tab-content">
+                                    <p>pics maybe?</p>
+                                </div>
+                            </div>
+                            <div class="tab sub">
+                                <input id="tab-wp" type="radio" name="otabs">
+                                <label for="tab-wp">Water Project</label>
+                                <div class="tab-content">
+                                    <p>pics maybe?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+            </div>
+                
+            <center><a href="files/KitchenRachel-Resume.pdf"><img src="images/download.png" class="download-button" width="200" height="60"></a></center>
         </main>
+        
+        
+        
         
         <footer>
             <hr>
-        <nav id="simple-links">
-            <ul>
-                <li><a href="experience.html">experience</a></li>
-                <li><a href="projects.html">projects</a></li>
-                <li><a href="portfolio.html">portfolio</a></li>
-            </ul>
-        </nav>
             <p class="footer">Rachel Kitchen</p> 
             <p class="subtext">rachelk4@vt.edu</p>
-        </footer>
-        
-        <script src="scripts/main.js"></script>
-    </body>
+        </footer>    </body>
 </html>
