@@ -30,7 +30,23 @@
                 <h3 id="name">Rachel Kitchen</h3>
             
             <div class="personal-statement">
-                <p>Personal statement describing your leadership service within the Division of Student Affairs. Please include how this scholarship would make a difference in your pursuit of leadership opportunities and how you feel this will impact you after graduating from Virginia Tech. Your statement should be approximately 750 words.</p>
+                <input id="statement" type="checkbox" name="statement">
+                <label for="statement">Personal Statement</label>
+                <div class="statement-content">
+                    <p>Being a leader means different things to different people.  An easy image that pops to mind when you hear the word "leader" is the image of a president, an army general, a company executive.  In history classes, we recognize and remember the leaders - the others fall aside and are forgotten.  These leaders are the people who inspired something to change from what it was before.  In a sense, leaders are the people who write history - without someone leading a new path, there will be no changes.</p>
+                    <p>But not everyone is going to be changing the history books.  There are always leaders, but not everyone gets the recognition of "changing the world".  Does that mean leaders are unnecessary?  Does that mean those leaders are less important?  Not at all.  These leaders are the people who inspire us every day, they are the ones who strive to help the world, even if it's only going to be in one person's life.</p>
+                    <p>That is the type of leader I aspire to be.  I don't need to change the world.  I just want to make a difference, to create opportunities, and to give help to those who may not even be able to ask for it.</p>
+                    <p>For these reasons, I try to place myself into diverse situations, so I can meet people from all different parts of life.  I meet people from my major, Computer Science, but try to put myself into many other places - whether it's Spanish class, the running club, or working at a dining center.  I believe the best leaders are the people who understand the people they are leading.  I believe that the mutual understanding is the basis of all good leadership, otherwise a leader will seem disconnected and difficult to trust.</p>
+                    <p>Some of the most important leaders I've had in my life are my teachers.  My teachers have come in different forms, whether it is a school teacher or a random student from my math class.  A good teacher opens their students' eyes: at every point in our life, especially as kids but even still as adults, we don't have the opportunity to see or experience everything the world has to offer.  A teacher provides that window, however small, to the world that we don't know.</p>
+                    <p>Someday, I want to be a teacher.  I want to be that person who builds that window.  The opportunities are so numerous, so broad, it's hard to see where I should even begin.  Should I focus on empowering young girls to join tech-related professions?  Should I reach out to low-income areas who may not have access to the resources that I have been so lucky to have?  Should I extend my dreams outwards into the world, reaching the "far-away" places abroad?  There are so, so many options, but the more I've thought about it, the more I've realized - the most important thing is to <emphasis>start</emphasis>.</p>
+                    <p>Virginia Tech has become that starting point for me.  I joined the Association for Women in Computing (AWC) which has outreach for empowering girls and minority groups in computing-related professions.  This outreach takes the form of </p>
+                </div>
+            </div>
+            
+            <div class="digital-story">
+                <input id="story" type="checkbox" name="digital-story">
+                <label for="story">Digital Story</label>
+                <p>What is Ut Prosim to me?  Ut Prosim means helping my community.  Ut Prosim means helping my friends.  Ut Prosim means helping my family. Ut Prosim means helping myself.  Virginia Tech enables me to become everything that I need to embrace Ut Prosim and follow it for the rest of my life. (video with text and pictures)</p>
             </div>
             
                 <div class="dropdown">
@@ -42,46 +58,109 @@
                                 <input id="tab-vt" type="radio" name="edutabs">
                                 <label for="tab-vt">Virginia Polytechnic Institute and State University</label>
                                 <div class="tab-content">
-                                    <p>B.S. Computer Science</p>
-                                    <p>Minors: Math, Spanish</p>
+                                    <a href="https://vt.edu/">Virginia Tech Website</a>
+                                    <ul>
+                                        <li>B.S. Computer Science</li>
+                                        <li>Minors: Math, Spanish</li>
+                                        <li>GPA: 3.93</li>
+                                    </ul>
+                                    <p>Expected Graduation Date: May 2020</p>
                                 </div>
                             </div>
                             <div class="tab sub">
-                                <input id="tab-phs" type="radio" name="edutabs">
+                                <input id="tab-phs" type="checkbox" name="edutabs">
                                 <label for="tab-phs">Poolesville High School</label>
                                 <div class="tab-content">
-                                    <p>sdsdf</p>
+                                    <a href="http://www.montgomeryschoolsmd.org/schools/poolesvillehs/">Poolesville High School Website</a>
+                                    <p>Humanities Magnet Program</p>
+                                    <p>Graduation Date: May 2016</p>
                                 </div>
-                            </div>
-                            <div class="tab sub">
-                                <input id="tab-jhu" type="radio" name="edutabs">
-                                <label for="tab-jhu">Johns Hopkins Engineering Innovation</label>
-                                <div class="tab-content">
-                                </div>
-                            </div>
-                            <div class="tab sub">
-                                <input id="tab-au" type="radio" name="edutabs">
-                                <label for="tab-au">American University: Discover the World of Communication</label>
-                                <div class="tab-content">
-                                </div>
-                            </div>                            
+                            </div>                         
                         </div>
                     </div>
                     
                     <div class="tab main">
                         <input id="tab-exp" type="radio" name="rtabs">
-                        <label for="tab-exp">Relevant Experience</label>
+                        <label for="tab-exp">Computer Science Relevant Experience</label>
                         <div class="tab-content">
                             <div class="tab sub">
                                 <input id="tab-ugra" type="radio" name="exptabs">
                                 <label for="tab-ugra">Undergraduate Research</label>
                                 <div class="tab-content">
+                                    <p>Machine Learning Visualization and Transfer Learning for RF Sensing</p>
+                                    <p>Fall Semester 2017, Virginia Tech Hume Center</p>
+                                    <p>Create a neural neural network that can classify RF Bluetooth signals and use visualization to gain insight into the network's decision-making process.</p>
+                                    <embed src="files/NNV-poster-fall2017.pdf" width="1000" height="640">
                                 </div>
                             </div>
                             <div class="tab sub">
                                 <input id="tab-rayth" type="radio" name="exptabs">
-                                <label for="tab-rayth">Cyber Security Engineer Intern</label>
+                                <label for="tab-rayth">Cyber Security Engineer Intern, Raytheon</label>
                                 <div class="tab-content">
+                                    <img src="http://media.corporate-ir.net/media_files/IROL/84/84193/raytheon_paris_1920x521.jpg" width="791" height="215">
+                                    <p>Summer 2017, Largo, FL</p>
+                                    <p>Developed secure cloud communications using virtualization through Docker and VMWare. Created and executed tests against security requirements. </p>
+                                </div>
+                            </div>
+                            <div class="tab sub">
+                                <input id="tab-jhu" type="radio" name="exptabs">
+                                <label for="tab-jhu">Johns Hopkins Engineering Innovation</label>
+                                <div class="tab-content">
+                                    <a href="https://ei.jhu.edu/">Engineering Innovation Website</a>
+                                    <p>July 2014</p>
+                                    <p>4-week summer program covering a range engineering disciplines, such as electrical, chemical, and structural engineering.</p>  
+                                    <p>Group projects covered circuits, physics, and product design.</p>
+                                    <img src="images/jhu-ei-bridge.jpg" width="320" height="240">
+                                    <p>Final project of creating a bridge out of pasta.</p>
+                                </div>
+                            </div>
+                            <div class="tab sub">
+                                <input id="tab-au" type="radio" name="exptabs">
+                                <label for="tab-au">American University: Discover the World of Communication</label>
+                                <div class="tab-content">
+                                    <a href="">Discover the World of Communication Website</a>
+                                    <p>June 2013</p>
+                                    <p>3-week summer program </p>
+                                    <p>Video Game Design Course: </p>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                                        
+                    <div class="tab main">
+                        <input id="tab-other" type="radio" name="rtabs">
+                        <label for="tab-other">Other Experience</label>
+                        <div class="tab-content">
+                            <div class="tab sub">
+                                <input id="tab-videos" type="radio" name="otabs">
+                                <label for="tab-videos">Freelance Videographer</label>
+                                <div class="tab-content">
+                                    <p>Working as a freelance videographer to create motion graphics videos for advertisement and promotion.</p>
+                                    <p>Example promotional video:</p>
+                                    <video src="videos/Wishdrop-ComingSoon.mov" type="video\mov" width="720" height="420" controls></video>
+                                </div>
+                            </div>
+                            
+                            <div class="tab sub">
+                                <input id="tab-gs" type="radio" name="otabs">
+                                <label for="tab-gs">Girl Scouts</label>
+                                <div class="tab-content">
+                                    <p>Member of Troop 6019 from 2006-2015</p>
+                                    <p>Serving the community through outreach projects.</p>
+                                </div>
+                            </div>
+                            <div class="tab sub">
+                                <input id="tab-asp" type="radio" name="otabs">
+                                <label for="tab-asp">Appalachian Service Project</label>
+                                <div class="tab-content">
+                                    <p>Service project dedicated to reconstructing homes for low-income families in the Applachian area.</p>
+                                </div>
+                            </div>
+                            <div class="tab sub">
+                                <input id="tab-wp" type="radio" name="otabs">
+                                <label for="tab-wp">Water Project</label>
+                                <div class="tab-content">
+                                    <p>School club for raising money to build water wells in Africa.</p>
                                 </div>
                             </div>
                         </div>
@@ -92,10 +171,14 @@
                         <label for="tab-projects">Personal Projects</label>
                         <div class="tab-content">
                             <div class="tab sub">
-                                <input id="tab-vr" type="radio" name="projectstabs">
+                                <input id="tab-vr" type="checkbox" name="projectstabs">
                                 <label for="tab-vr">Google VR Game</label>
                                 <div class="tab-content">
-                                    <p>screenshots, demos, description</p>
+                                    <p>A game created using Unity Game Engine to be used with Google Cardboard VR.</p>
+                                    <p>Language: C#</p>
+                                    <p>The game is a highscore-based game using first person shooter mechanics.</p>
+                                    <p>Game Demo: (two separate views are for creating the VR effect when used with the Cardboard VR Viewer)</p>
+                                    <video src="videos/vr-runner-demo.mp4" type="video\mp4" width="605" height="450" controls></video>
                                 </div>
                             </div>
                         </div>
@@ -106,17 +189,33 @@
                         <label for="tab-extra">Extracurriculars</label>
                         <div class="tab-content">
                             <div class="tab sub">
-                                <input id="tab-hackers" type="radio" name="extabs">
+                                <input id="tab-hackers" type="checkbox" name="extabs">
                                 <label for="tab-hackers">Hackers@VT</label>
                                 <div class="tab-content">
-                                    <p>club</p>
+                                    <p>Student organization dedicated to creating a community for computer science students by connecting students to tech companies, holding workshops on diverse topics, and giving students the opportunity to particpate in hackathons.</p>
+                                    <p></p>
                                 </div>
                             </div>
                             <div class="tab sub">
-                                <input id="tab-awc" type="radio" name="extabs">
+                                <input id="tab-awc" type="checkbox" name="extabs">
                                 <label for="tab-awc">Association for Women in Computing (AWC)</label>
                                 <div class="tab-content">
-                                    <p>club</p>
+                                    <a href="http://www.awc.org.vt.edu/">Virginia Tech AWC Website</a>
+                                    <p>Student organization dedicated to empowering women and minority groups in computing-related professions.</p>
+                                    <p>SEC Representative: representing the club to the Student Engineering Council.</p>
+                                </div>
+                            </div>
+                            <div class="tab sub">
+                                <input id="tab-vtrc" type="checkbox" name="extabs">
+                                <label for="tab-vtrc">Running Club at Virginia Tech</label>
+                                <div class="tab-content">
+                                    <a href="">Running Club at Virginia Tech Website</a>
+                                    <p>Virginia Tech's running club.  The team meets 5 days a week for  club members to run and train together.  Club members have the option to partcipate in cross country and track meets hosted by <a href="">NIRCA</a>.</p>
+                                    <ul>
+                                        <li><img src=""></li>
+                                        <li><img src=""></li>
+                                        <li><img src=""></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -127,60 +226,26 @@
                         <label for="tab-awards">Awards &amp; Achievements</label>
                         <div class="tab-content">
                             <div class="tab sub">
-                                <input id="tab-scholarship" type="radio" name="awardtabs">
+                                <input id="tab-scholarship" type="checkbox" name="awardtabs">
                                 <label for="tab-scholarship">Investment in Excellence and CSRC Scholarships</label>
                                 <div class="tab-content">
-                                    <p>gud job</p>
+                                    <p>Awarded to students who display academic </p>
                                 </div>
                             </div>
                             <div class="tab sub">
-                                <input id="tab-ard" type="radio" name="awardtabs">
+                                <input id="tab-ard" type="checkbox" name="awardtabs">
                                 <label for="tab-ard">1st place in VT AWC Arduino Hackathon</label>
                                 <div class="tab-content">
+                                    <p>On-campus hackathon using Arduino Uno technology.  Students had 4 hours to create something without having any prior knowledge of Arduino.</p>
                                     <ul>
                                         <li><img src="images/arduino_hackathon.jpeg" width="192" height="256"></li>
-                                        <li><video width="480" height="270" controls><source src="videos/arduino-demo.mp4" type="video\mp4"></video></li>
+                                        <li><video width="480" height="270" controls src="videos/arduino-demo.mp4" type="video\mp4"></video></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="tab main">
-                        <input id="tab-other" type="radio" name="rtabs">
-                        <label for="tab-other">Other Experience</label>
-                        <div class="tab-content">
-                            <div class="tab sub">
-                                <input id="tab-videos" type="radio" name="otabs">
-                                <label for="tab-videos">Freelance Videographer</label>
-                                <div class="tab-content">
-                                    <p>link 2 videos</p>
-                                </div>
-                            </div>
-                            <div class="tab sub">
-                                <input id="tab-gs" type="radio" name="otabs">
-                                <label for="tab-gs">Girl Scouts</label>
-                                <div class="tab-content">
-                                    <p>pics maybe?</p>
-                                </div>
-                            </div>
-                            <div class="tab sub">
-                                <input id="tab-asp" type="radio" name="otabs">
-                                <label for="tab-asp">Appalachian Service Project</label>
-                                <div class="tab-content">
-                                    <p>pics maybe?</p>
-                                </div>
-                            </div>
-                            <div class="tab sub">
-                                <input id="tab-wp" type="radio" name="otabs">
-                                <label for="tab-wp">Water Project</label>
-                                <div class="tab-content">
-                                    <p>pics maybe?</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            
+
             </div>
                 
             <center><a href="files/KitchenRachel-Resume.pdf"><img src="images/download.png" class="download-button" width="200" height="60"></a></center>
