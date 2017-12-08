@@ -133,7 +133,7 @@ h4 {
 .subtext {
     font-size: 15px;
     color: gray;
-    margin: -15px;
+    margin: auto;
 }
 
 /* experience page specific */
@@ -196,6 +196,13 @@ input:checked ~ .statement-content {
     -webkit-transition: max-height .6s;
     -o-transition: max-height .6s;
     transition: max-height .6s ;
+}
+
+.digital-story {
+    margin: 20px 0px 30px 0px
+}
+.digital-story h3 {
+    margin: auto;
 }
 
 /* drop-down menus */
