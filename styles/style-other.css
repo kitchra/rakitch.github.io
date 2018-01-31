@@ -35,7 +35,7 @@ body {
 	font-size: 40px;
 	font-style: italic;
 	letter-spacing: -1px;
-	color: gray;
+	color: #abb44b;
 	margin: -5vh 20vh 0 20vh;
 }
 .topper p {
@@ -126,6 +126,7 @@ backface-visibility: hidden;
 
 /* LABELS ------------------------------- */
 
+
 input[type="radio"] {
 	display: none;
 	position: absolute;
@@ -149,6 +150,9 @@ label {
 	cursor: pointer;
 	z-index: 3;
 }
+label p {
+	margin: 9%;
+}
 input[type="radio"]:checked + .sub-section label {
 	height: 0;
 	top: 20%;
@@ -161,6 +165,7 @@ input[type="radio"]:checked + .sub-section label {
 input[type="radio"]:checked + .sub-section h2 {
 	top: 10%;
 }
+
 
 /* SUB-SECTION ------------------------------- */
 
@@ -190,6 +195,7 @@ input[type="radio"]:checked + .sub-section {
 	height: 30%;
 	opacity: 0;
 }
+
 .sub-content {
 	position: relative;
 	overflow: hidden;
@@ -205,6 +211,30 @@ input[type="radio"]:checked + .sub-section .sub-content {
 	height: 60%;
 	margin-top: 0;
 }
+.sub-content h3 {
+	text-align: center;
+	font-weight: normal;
+	letter-spacing: -1px;
+}
+.sub-content p {
+	text-align: left;
+	letter-spacing: -2px;
+	margin: 0 40px;
+}
+.sub-content ul {
+	text-align: left;
+	list-style: square;
+	margin: 20px 30px;
+}
+.sub-content li {
+	margin: 10px 40px;
+}
+.sub-content a {
+	position: relative;
+	font-size: 20px;
+	color: deepskyblue;
+	text-decoration: underline;
+}
 
 
 
@@ -213,8 +243,15 @@ input[type="radio"]:checked + .sub-section .sub-content {
 
 #academics {
 	top: 110vh;
+}
+#virginia-tech {
     background-color: #f6fbba;
-	
+}
+#poolesville {
+    background-color: #ecf19e;
+}
+#awards-honors {
+    background-color: #f6fbba;
 }
 
 
@@ -222,13 +259,18 @@ input[type="radio"]:checked + .sub-section .sub-content {
 
 #service {
 	top: 180vh;
-    background-color: #ecf19e;
 }
 #service .sub-section {
 	max-width: 30%;
 }
 #service input[type="radio"]:checked + .sub-section {
 	max-width: 70%;
+}
+#girl-scouts {
+	background-color: #bfc85a;
+}
+#service-in-college {
+	background-color: #ccd56c;
 }
 
 
@@ -238,7 +280,15 @@ input[type="radio"]:checked + .sub-section .sub-content {
 	top: 250vh;
     background-color: #f6fbba;
 }
-
+#running-club {
+    background-color: #f6fbba;
+}
+#women-in-computing {
+    background-color: #ecf19e;
+}
+#hackers-at-vt {
+    background-color: #f6fbba;
+}
 
 
 
