@@ -1,0 +1,576 @@
+html {
+    font-family: 'Overpass Mono', monospace;
+}
+body {
+    text-align: left;
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
+    z-index: -2;
+}
+body, html {
+     overflow-x: hidden;
+}
+
+
+.welcome {
+    background-image: url(../images/welcome-bg.png);
+    background-size: 60vw 400px;
+    height: 400px;
+    width: 60vw;
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+}
+.welcome h2 {
+    font-size: 100px;
+    background: url(../images/bamboo.jpg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400px;
+    display: block;
+    padding: 110px 0 0 100px;
+    margin: 0;
+}
+.welcome p {
+    font-size: 20px;
+    letter-spacing: -2px;
+    color: #000000;
+    padding: 0 0 0 110px;
+    margin: 0px;
+}
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/bamboo.jpg);
+    background-size: 100vw;
+    height: 400px;
+    width: 100vw;
+    z-index: -1;
+}
+
+
+/* Section links -------------------------- */
+
+a {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 100%;
+    text-decoration: none;
+    text-shadow: 1px 2px #000000;
+    color: #ffffff;
+    position: absolute;
+    width: 200px;
+    left: 0;
+    top: 17px;
+    transition: all .4s;
+}
+.link {
+    position: relative;
+    display: inline-block;
+    background-image: url(../images/bamboo.jpg);
+    background-size: 800px;
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    transition: all .5s;
+}
+.link:hover {
+    transform: scale(1.1, 1.1);
+}
+.section-links {
+    padding: 0 0 100px 100px;
+}
+
+
+/* General section dividers -------------------------- */
+
+.section {
+    height: 800px;
+    width: 100vw;
+    text-align: left;
+}
+h3 {
+    color: white;
+    font-size: 200px;
+    font-weight: bolder;
+    line-height: 60%;
+    letter-spacing: 50px;
+    word-wrap: break-word;
+    align-content: center;
+    font-variant-caps: all-small-caps;
+    transform: scale(1.3, 1.0);
+    display: inline-block;
+    padding: 0px 50px;
+    height: 900px;
+    width: 45px;
+    margin: 0;
+}
+#cs-slide > h3 {
+    margin-top: 35px;
+}
+#de-slide > h3 {
+    margin-top: 90px;
+}
+#o-slide > h3 {
+    margin-top: 140px;
+}
+
+
+/* Slide-button Formatting -------------------------- */
+
+
+input[type="checkbox"] {
+    display: none;
+}
+label {
+    position: absolute;
+    font-size: 70px;
+    right: 323px;
+    color: white;
+    z-index: 3;
+	transition: all .7s;
+}
+input[type="checkbox"]:checked ~ label {
+    transform: scaleX(-1);
+    height: 100px;
+    width: 100px;
+    right: 838px;
+    z-index: 3;
+}
+#lbl-cs {
+    top: 800px;
+}
+#lbl-de {
+    top: 1700px;
+}
+#lbl-o {
+    top: 2600px;
+}
+
+
+/* Slide Formatting -------------------------- */
+
+.slide {
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    height: 900px;
+    width: 1063px;
+    z-index: 2;
+    transition: all .7s;
+}
+input[type="checkbox"]:checked ~ .slide {
+    width: 480px;
+}
+#cs-slide {
+    background-image: url(../images/cs-bg.png);
+    background-size: 1063px 900px;
+    top: 400px;
+}
+#de-slide {
+    background-image: url(../images/de-bg.png);
+    background-size: 1063px 900px;
+    top: 1300px;
+}
+#o-slide {
+    background-image: url(../images/o-bg.png);
+    background-size: 1063px 900px;
+    top: 2200px;
+}
+
+.slide h5 {
+    color: #ffffff;
+    opacity: 1;
+    font-size: 35px;
+    font-style: italic;
+    letter-spacing: -1px;
+    position: absolute;
+    top: 100px;
+    left: 220px;
+    width: 700px;
+    transition: all .3s;
+    z-index: 3;
+}
+#cs-slide h5{
+    color: #ffffff;
+}
+#de-slide h5 {
+    color: #9da081;
+}
+#o-slide h5 {
+    color: #abb44b;
+}
+input[type="checkbox"]:checked ~ .slide h5 {
+    opacity: 0;
+}
+.slide p {
+    color: #ffffff;
+    opacity: 1;
+    font-size: 25px;
+    letter-spacing: -2px;
+    position: absolute;
+    top: 250px;
+    left: 220px;
+    width: 40vw;
+    transition: all .3s;
+    z-index: 3;
+}
+input[type="checkbox"]:checked ~ .slide p {
+    opacity: 0;
+}
+
+
+/* Background-Section Formatting ---------- */
+
+.bg-section {
+    position: absolute;
+    align-content: center;
+    right: 0;
+    width: 450px;
+    z-index: 1;
+    transition: width .7s;
+}
+input[type="checkbox"]:checked ~ div .bg-section {
+    width: 950px;
+}
+#w-exp {
+    top: 0;
+    height: 300px;
+    background-color: #dadada;
+}
+#pp {
+    top: 300px;
+    height: 300px;
+    background-color: #e7e7e7;
+}
+#ugra {
+    top: 600px;
+    height: 300px;
+    background-color: #dadada;
+}
+#videos {
+    top: 0px;
+    height: 450px;
+    background-color: #f7fada;
+}
+#art {
+    top: 450px;
+    height: 450px;
+    background-color: #e4e8b7;
+}
+#academic {
+    top: 0;
+    height: 300px;
+    background-color: #f6fbba;
+}
+#service {
+    top: 300px;
+    height: 300px;
+    background-color: #ecf19e;
+}
+#ec {
+    top: 600px;
+    height: 300px;
+    background-color: #f6fbba;
+}
+
+h4 {
+    position: relative;
+    left: 110px;
+    font-size: 35px;
+    font-variant-caps: all-petite-caps;
+    margin: 0;
+}
+#cs-bg h4{
+    color: #56574a;
+    text-shadow: 1px 1px #c9c9c9;
+}
+#de-bg h4 {
+    color: #9da081;
+    text-shadow: 1px 1px #c6c9a2;
+}
+#o-bg h4 {
+    color: #abb44b;
+    text-shadow: 1px 1px #c6c9a2;
+}
+
+#cs-bg {
+    position: absolute;
+    display: block;
+    background-color: #e7e7e7;
+    height: 900px;
+    width: 100vw;
+    top: 400px;
+    left: 0;
+}
+#de-bg {
+    position: absolute;
+    background-color: #ffe88d;
+    height: 900px;
+    width: 100vw;
+    left: 0;
+    top: 1300px;
+}
+#o-bg {
+    position: absolute;
+    background-color: #eabb9c;
+    height: 900px;
+    width: 100vw;
+    left: 0;
+    top: 2200px;
+}
+
+
+
+/* Box Formatting -------------------------- */
+
+.box {
+    position: absolute;
+    overflow: hidden;
+    float: right;
+    top: 60px;
+    left: 110px;
+    height: 200px;
+    width: 250px;
+    margin: 0px 10px;
+    background-color: white;
+    transition: all .7s;
+    z-index: 4;
+}
+#w-exp .box, #ugra .box{
+    background-color: #f3f3f3;
+    box-shadow: 4px 3px #c9c9c9;
+}
+#pp .box {
+    background-color: #ffffff;
+    box-shadow: 4px 3px #c9c9c9;
+}
+#videos .box {
+    height: 350px;
+    background-color: #ffffff;
+    box-shadow: 4px 3px #9da081;
+}
+#art .box {
+    height: 350px;
+    background-color: #f7fada;
+    box-shadow: 4px 3px #9da081;
+}
+#academic .box, #ec .box {
+    background-color: #ffffff;
+    box-shadow: 4px 3px #abb44b;
+}
+#service .box {
+    background-color: #fdffea;
+    box-shadow: 4px 3px #abb44b;
+}
+
+/* ----- COMPUTER SCIENCE BOXES ----- */
+
+/* Work Experience */
+input[type="checkbox"]:checked ~ div #we1 {
+    width: 350px;
+    left: 110px;
+}
+input[type="checkbox"]:checked ~ div #we2 {
+    width: 350px;
+    left: 520px;
+}
+
+/* Personal Projects */
+input[type="checkbox"]:checked ~ div #pp1 {
+    width: 350px;
+    left: 110px;
+}
+input[type="checkbox"]:checked ~ div #pp2 {
+    width: 350px;
+    left: 520px;
+}
+
+/* Personal Projects */
+input[type="checkbox"]:checked ~ div #ugra1 {
+    width: 500px;
+    left: 250px;
+}
+
+
+/* ----- DESIGN BOXES ----- */
+
+/* Videos */
+input[type="checkbox"]:checked ~ div #v1 {
+    left: 70px;
+}
+input[type="checkbox"]:checked ~ div #v2 {
+    left: 347px;
+}
+input[type="checkbox"]:checked ~ div #v3 {
+    left: 625px;
+}
+
+/* Art */
+#art .box img {
+	position: relative;
+	width: 80%;
+	height: auto;
+	left: 35px;
+}
+#art .box button {
+	position: absolute;
+	background-color: rgba(0,0,0,0.4);
+	border: none;
+	height: 50px;
+	width: 30px;
+	top: 160px;
+	z-index: 5;
+}
+#art .box .display-left {
+	left: 10px;
+}
+#art .box .display-right {
+	right: 10px;
+}
+input[type="checkbox"]:checked ~ div #a1 {
+    width: 350px;
+    left: 110px;
+}
+input[type="checkbox"]:checked ~ div #a2 {
+    width: 350px;
+    left: 520px;
+}
+
+
+/* ----- OTHER BOXES ----- */
+
+/* Academic */
+input[type="checkbox"]:checked ~ div #ac1 {
+    left: 70px;
+}
+input[type="checkbox"]:checked ~ div #ac2 {
+    left: 347px;
+}
+input[type="checkbox"]:checked ~ div #ac3 {
+    left: 625px;
+}
+
+/* Service */
+input[type="checkbox"]:checked ~ div #s1 {
+    width: 350px;
+    left: 110px;
+}
+input[type="checkbox"]:checked ~ div #s2 {
+    width: 350px;
+    left: 520px;
+}
+
+/* Extracurriculars */
+input[type="checkbox"]:checked ~ div #ec1 {
+    left: 70px;
+}
+input[type="checkbox"]:checked ~ div #ec2 {
+    left: 347px;
+}
+input[type="checkbox"]:checked ~ div #ec3 {
+    left: 625px;
+}
+
+
+
+/* Box Interior Info -------------------------- */
+
+.bg-section h6 {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0 0 0;
+}
+.bg-section h6 + p {
+	font-size: 12px;
+    text-align: center;
+    margin: 0 10px 20px 10px;
+}
+.bg-section h6 + p a {
+	font-size: 12px;
+}
+#videos h6 + p {
+	margin: 17px 8px;
+}
+#design .box li {
+	margin-bottom: 10px;
+}
+.bg-section p {
+    font-size: 13px;
+    letter-spacing: -1px;
+    margin: 0 30px;
+}
+.bg-section li {
+	font-size: 13px;
+	letter-spacing: -1px;
+	margin: 0 30px 0 0;
+}
+.bg-section ul {
+	list-style-type: square;
+	margin: 7px 0;
+}
+.bg-section a {
+    position: relative;
+    font-size: 13px;
+	font-weight: normal;
+    text-decoration: underline;
+    letter-spacing: -1px;
+	line-height: normal;
+    color: #56574a;
+	top: 0;
+    padding: 0;
+    text-shadow: none;
+	transition: all 0s;
+}
+.bg-section a:hover {
+	color: cornflowerblue;
+}
+.box .fade {
+    position: absolute;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    background-size: 100% 40px;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+}
+
+
+/* About Me -------------------------- */
+
+.about-me {
+	position: absolute;
+	top: 3100px;
+	height: 600px;
+	width: 100vw;
+}
+.me-info {
+	position: absolute;
+	background-color: white;
+	top: 0;
+	right: 0;
+	height: 600px;
+	width: 60vw;
+	z-index: 3;
+}
+#me-pic {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 600px;
+	z-index: 2;
+}
+.me-info h2 {
+    font-size: 100px;
+    background: url(../images/IMG_3743.JPG);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 600px;
+    display: block;
+    padding: 110px 0 0 100px;
+    margin: 0;
+}

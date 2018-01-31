@@ -1,0 +1,246 @@
+html {
+    font-family: 'Overpass Mono', monospace;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: skyblue;
+	overflow-x: hidden;
+}
+
+
+/* TOPPER SECTION ------------------------------ */
+
+.topper {
+	position: absolute;
+	text-align: center;
+	background-color: #d7e078;
+	top: 0;
+	left: 0;
+	height: 80vh;
+	width: 100vw;
+	z-index: 1;
+}
+.topper h1 {
+	font-size: 150px;
+	font-weight: bold;
+	letter-spacing: -3px;
+	line-height: 100%;
+	transform: scaleX(1.1);
+	color: white;
+	margin-top: 25vh;
+}
+.topper h2 {
+	font-size: 40px;
+	font-style: italic;
+	letter-spacing: -1px;
+	color: gray;
+	margin: -5vh 20vh 0 20vh;
+}
+.topper p {
+	font-size: 25px;
+	letter-spacing: -1px;
+	color: white;
+	margin: 2vh 20vh 0 20vh;
+}
+
+#scroll-btn {
+	position: absolute;
+	top: 70vh;
+	left: 45vw;
+	width: 10vw;
+	height: 10vh;
+	z-index: 2;
+}
+#scroll-btn img {
+	max-width: 100%;
+	max-height: 100%;
+}
+a[id= "scroll-btn" ]:target ~ div.content {
+-webkit-transform: translateY( 0px);
+transform: translateY( 0px );
+}
+
+
+/* NAVIGATION SECTION ------------------------------- */
+
+.navigation {
+	background-color: white;
+	position: absolute;
+	text-align: center;
+	top: 80vh;
+	left: 0;
+	height: 30vh;
+	width: 100vw;
+}
+.navigation h1 {
+	margin-top: 45px;
+	font-variant-caps: all-petite-caps;
+}
+.navigation a {
+	display: inline-block;
+	background-color: #e3e3e3;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	width: 20%;
+	height: 15%;
+	padding-top: 20px;
+	margin: 20px;
+	cursor: pointer;
+}
+
+
+/* CONTENT SECTION ------------------------------- */
+
+.content {
+	
+-webkit-transform: translateZ( 0 );
+transform: translateZ( 0 );
+-webkit-transition: -webkit-transform 0.6s ease-in-out;
+transition: transform 0.6s ease-in-out;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+.section {
+	position: absolute;
+	height: 70vh;
+	width: 100vw;
+	font-size: 0; /* remove space between sub-sections */
+}
+.section h1 {
+	position: absolute;
+	font-variant-caps: all-small-caps;
+	letter-spacing: -2px;
+	font-weight: bold;
+	font-size: 60px;
+    color: #56574a;
+	left: 40px;
+	margin: 10px 0;
+	transform: scaleX(1.1);
+    text-shadow: 1px 1px #c9c9c9;
+	z-index: 3;
+}
+
+
+/* LABELS ------------------------------- */
+
+input[type="radio"] {
+	display: none;
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+label {
+	position: absolute;
+	background-color: #56574a;
+	overflow: hidden;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+	color: white;
+	height: 10%;
+	width: 50%;
+	top: 50%;
+	left: 25%;
+	opacity: 1;
+	transition: all .6s;
+	cursor: pointer;
+	z-index: 3;
+}
+input[type="radio"]:checked + .sub-section label {
+	height: 0;
+	top: 20%;
+}
+.sub-section h2 {
+	position: relative;
+	top: 40%;
+	transition: top .6s;
+}
+input[type="radio"]:checked + .sub-section h2 {
+	top: 10%;
+}
+
+/* SUB-SECTION ------------------------------- */
+
+.sub-section {
+	position: relative;
+	display: inline-block;
+	font-size: 20px;
+	text-align: center;
+	max-width: 20%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	z-index: 2;
+	overflow: hidden;
+	transition: max-width .6s;
+}
+input[type="radio"]:checked + .sub-section {
+	max-width: 60%;
+}
+.width-control {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 2200px;
+	height: 30%;
+	opacity: 0;
+}
+.sub-content {
+	position: relative;
+	overflow: hidden;
+	width: 90%;
+	height: 0%;
+	left: 5%;
+	top: -20%;
+	background-color: white;
+	transition: all .6s;
+	margin-top: 60%;
+}
+input[type="radio"]:checked + .sub-section .sub-content {
+	height: 60%;
+	margin-top: 0;
+}
+
+
+
+
+/* Academics ------------- */
+
+#academics {
+	top: 110vh;
+    background-color: #f6fbba;
+	
+}
+
+
+/* Service ------------- */
+
+#service {
+	top: 180vh;
+    background-color: #ecf19e;
+}
+#service .sub-section {
+	max-width: 30%;
+}
+#service input[type="radio"]:checked + .sub-section {
+	max-width: 70%;
+}
+
+
+/* Service ------------- */
+
+#extracurriculars {
+	top: 250vh;
+    background-color: #f6fbba;
+}
+
+
+
+
+
+

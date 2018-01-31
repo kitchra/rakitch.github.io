@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+        <meta charset="utf-8">
+        <meta name="author" content="Rachel Kitchen">
+        <meta name="description" content="Design portfolio">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/style-design.css">
+        <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
+		
+                
+        <title>Design</title>
+    </head>
+    
+    <body>
+        <main>
+			<a href="#work-experience" id="scroll-btn"><img src="images/down-arrow.png"></a>
+			<div class="topper">
+				<h1>DESIGN</h1>
+				<h2>summary line</h2>
+				<p>paragraph description of my history with art/design (making videos, interest in art, etc.) and what it means in my life and how it affects my approach to other things</p>
+			</div>
+			
+			<div class="navigation">
+				<h1>Navigate to another page:</h1>
+				<a href="index.html">HOME</a>
+				<a href="computer-science.html">COMPUTER SCIENCE</a>
+				<a href="other.html">OTHER</a>
+			</div>
+			
+			<div class="content">
+				<div class="section" id="videos">
+					<h1>Videos</h1>
+					<input type="radio" id="promo" name="vids" checked="checked">
+					<div class="sub-section" id="promotional-videos">
+						<label for="promo"><p>click to expand</p></label>
+						<h2>Promotional</h2>
+						<div class="width-control"></div>
+						<div class="sub-content" id="promo-content">
+							<h3>Paid projects to create promotional videos for startup companies.</h3>
+							<ul>
+								<li><a href="https://www.youtube.com/edit?o=U&video_id=HdK6oInEj34">WishDrop (2016)</a></li>
+								<li><a href="https://www.youtube.com/edit?o=U&video_id=pZKd_YKcT74">Launch Academy (2016)</a></li>
+								<li><a href="https://www.youtube.com/edit?o=U&video_id=Bxue-5W_XtA">Water Project (2014)</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<input type="radio" id="anim" name="vids">
+					<div class="sub-section" id="animation-experimental">
+						<label for="anim"><p>click to expand</p></label>
+						<h2>Animation &amp; Experimental</h2>
+						<div class="width-control"></div>
+						<div class="sub-content" id="anim-content">
+							<h3>2D animation and special-effects, including motion graphics, keyframe drawing, and layering.</h3>
+							<ul>
+								<li><a href="https://www.youtube.com/watch?v=tx3pgIn7Gy0&t=58s">"Please Let Me Wonder" Animation (2016)</a></li>
+<!--
+								<li><a href="https://www.youtube.com/edit?o=U&video_id=2xfx_hNXArc">"Streetlights" (2015)</a></li>
+								<li><a href="https://www.youtube.com/edit?o=U&video_id=2xfx_hNXArc">"I'll Be Alright" (2015)</a></li>
+-->
+							</ul>
+						</div>
+					</div>
+					
+					
+					<input type="radio" id="others" name="vids">
+					<div class="sub-section" id="others-videos">
+						<label for="others"><p>click to expand</p></label>
+						<h2>Other</h2>
+						<div class="width-control"></div>
+						<div class="sub-content" id="others-content">
+							<h3>One-time projects completed for classes and clubs.</h3>
+							<ul>
+								<li><a href="https://www.youtube.com/watch?v=KjEHSY4VUZM">Poolesville Track &amp; Field End of Year Video (2016)</a></li>
+								<li><a href="https://www.youtube.com/watch?v=WR5BtZPd9nk">"I Want It Math Way" AP Calculus Project (2016)</a></li>
+								<li><a href="https://www.youtube.com/watch?v=ZRKe9NyFrUo">"Apollo and Daphne" Art History Project (2016)</a></li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="section" id="art">
+					<h1>Art</h1>
+					<div class="slideshow">
+						<img class="traditional" src="images/Elephant.JPG">
+						<img class="traditional" src="images/self-portrait.jpg">
+						<img class="traditional" src="images/Zebra1.JPG">
+						<img class="traditional" src="images/Zebra2.JPG">
+						<button class="button display-left" onclick="plusDivs(-1)">&#10094;</button>
+						<button class="button display-right" onclick="plusDivs(+1)">&#10095;</button>
+					</div>
+				</div>
+						
+			</div>
+		</main>
+		
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+			  showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("traditional");
+			  if (n > x.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+				 x[i].style.display = "none";  
+			  }
+			  x[slideIndex-1].style.display = "block";  
+			}
+		</script>
+		
+	</body>
+
+</html>
