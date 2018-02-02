@@ -13,6 +13,19 @@ body, html {
      overflow-x: hidden;
 }
 
+#explanation a {
+	height: 100px;
+	width: 250px;
+	background-color: black;
+	color: white;
+	transition: all .5s;
+}
+#explanation a:hover {
+	height: 100px;
+	width: 250px;
+	background-color: dimgray;
+	color: white;
+}
 
 .welcome {
     background-image: url(../images/welcome-bg.png);
