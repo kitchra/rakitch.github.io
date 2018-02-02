@@ -14,15 +14,19 @@ body, html {
 }
 
 #explanation a {
-	height: 100px;
-	width: 250px;
+	position: absolute;
+	top: 450px;
+	left: 100px;
+	height: 75px;
+	width: 200px;
 	background-color: black;
 	color: white;
 	transition: all .5s;
 }
+#explanation a p {
+	margin: 30px;
+}
 #explanation a:hover {
-	height: 100px;
-	width: 250px;
 	background-color: dimgray;
 	color: white;
 }
