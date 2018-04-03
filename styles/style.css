@@ -1,0 +1,153 @@
+html {
+	font-family: 'Raleway', sans-serif;
+}
+body {
+	padding: 0;
+	margin: 0;
+}
+
+main {
+	position: relative;
+	background-color: #fefefe;
+}
+.highlight {
+	position: relative;
+	width: auto;
+	background-color: cyan;
+	z-index: -1;
+	
+}
+#welcome {
+	position: absolute;
+	top: 10vh;
+	left: 0;
+	height: 40vh;
+	width: 100vw;
+	text-align: center;
+}
+#welcome h1 {
+	font-size: 100px;
+	display: inline-block;
+}
+#welcome h1 .highlight {
+	top: -50px;
+	height: 40px;
+}
+
+nav {
+	background-color: black;
+	position: fixed;
+	height: 10vh;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	text-align: right;
+	z-index: 10;
+}
+nav .nav-link {
+	display: inline-block;
+	margin-top: 6vh;
+	margin-right: 30px;
+}
+nav .highlight {
+	height: 0px;
+	top: 0px;
+	cursor: pointer;
+	transition: all .3s;
+}
+nav a:hover + .highlight, nav a:active .highlight {
+	height: 10px;
+	top: -10px;
+}
+nav a {
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	z-index: 1;
+}
+
+#sections {
+	position: absolute;
+	display: block;
+	margin: 0 12vw;
+	top: 40vh;
+}
+.section-link {
+	width: 15vw;
+	margin: 5vw;
+	cursor: pointer;
+}
+.section-img {
+	position: absolute;
+	display: inline-block;
+	width: 15vw;
+	top: 0;
+	transition: top .4s;
+}
+.sub {
+	position: relative;
+	left: -5vw;
+	transition: top .4s;
+}
+.section-link:hover .section-img {
+	top: -15px;
+}
+.section-link:hover + .sub {
+	top: -10px;
+}
+#sections-highlight {
+	position: absolute;
+	display: block;
+	margin: 0 6vw;
+	top: 35vh;
+}
+.sub {
+	z-index: -1;
+}
+
+#sections-captions {
+	position: absolute;
+	text-align: center;
+	display: block;
+	top: 65vh;
+	margin: 0 12vw;
+}
+#sections-captions a {
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	font-size: 30px;
+	width: 15vw;
+	margin: 0 5vw;
+	cursor: pointer;
+}
+#sections-captions a:hover {
+	color: black;
+}
+
+footer {
+	background-color: lightgray;
+	text-align: right;
+	position: fixed;
+	bottom: 0;
+	height: 6vh;
+	width: 100vw;
+}
+footer p {
+	position: absolute;
+	color: black;
+	right: 15vw;
+}
+#social-media-links {
+	margin-right: 3vw;
+}
+footer a {
+	width: 2vw;
+	margin: 1vh 0.25vw;
+}
+footer img {
+	width: 2vw;
+	height: auto;
+	margin: 1.25vh 0 0 0;
+}
