@@ -151,3 +151,56 @@ footer img {
 	height: auto;
 	margin: 1.25vh 0 0 0;
 }
+
+/* ------------------------------------------------ */
+
+#projects-list {
+	position: absolute;
+	left: 0;
+	top: 35vh;
+	margin: 0 2vw;
+	padding: 0;
+	width: 90vw;
+	height: auto;
+}
+.project-box {
+	position: relative;
+	display: inline-block;
+	top: 0;
+	padding: 0;
+	margin: 0.5vw;
+	width: 30vw;
+	height: 22vw;
+	text-decoration-line: none;
+	background-color: black;
+	transition: .3s;
+}
+.project-box:hover {
+	background-color: cyan;
+	top: -5px;
+	
+}
+.project-box h3 {
+	text-align: center;
+	margin: 0;
+	padding: 9.6vw 0 0 0;
+	color: white;
+	font-size: 2vw;
+}
+#vr-runner:hover, #p6:hover {
+	background-color: orange;
+}
+#p2:hover, #p4:hover {
+	background-color: red;
+}
+#p3:hover, #p5:hover {
+	background-color: darkblue;
+}
+
+/* ------------------------------------------------ */
+
+header {
+	width: 100vw;
+	height: 20vh;
+	background-color: yellow;
+}

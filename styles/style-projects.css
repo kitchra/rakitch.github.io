@@ -1,0 +1,92 @@
+html {
+	font-family: 'Raleway', sans-serif;
+}
+body {
+	padding: 0;
+	margin: 0;
+}
+
+main {
+	position: relative;
+	background-color: #fefefe;
+}
+.highlight {
+	position: relative;
+	width: auto;
+	background-color: cyan;
+	z-index: -1;
+	
+}
+#welcome {
+	position: absolute;
+	top: 10vh;
+	left: 0;
+	height: 40vh;
+	width: 100vw;
+	text-align: center;
+}
+#welcome h1 {
+	font-size: 100px;
+	display: inline-block;
+}
+#welcome h1 .highlight {
+	top: -50px;
+	height: 40px;
+}
+
+nav {
+	background-color: black;
+	position: fixed;
+	height: 10vh;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	text-align: right;
+	z-index: 10;
+}
+nav .nav-link {
+	display: inline-block;
+	margin-top: 6vh;
+	margin-right: 30px;
+}
+nav .highlight {
+	height: 0px;
+	top: 0px;
+	cursor: pointer;
+	transition: all .3s;
+}
+nav a:hover + .highlight, nav a:active .highlight {
+	height: 10px;
+	top: -10px;
+}
+nav a {
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	z-index: 1;
+}
+
+
+/* ------------------------------------------------ */
+
+header {
+	position: relative;
+	width: 100vw;
+	height: 60vh;
+	background-color: yellow;
+}
+header:hover {
+	background-color: magenta;
+}
+header:hover h1 {
+	color: yellow;
+}
+h1 {
+	color: white;
+	font-size: 250px;
+	font-style: italic;
+	text-align: center;
+	padding: 20vh 0 10vh 0;
+	margin: 0;
+}
